@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events - addEventListener()</title>
+</head>
+<body>
+
+<form id="message-form" method="get" action="/form-example" novalidate>
+    <label for="message">
+        Message:
+        <input type="text" id="message">
+    </label>
+
+    <button type="submit">
+        Submit
+    </button>
+</form>
+
+<script>
+const messageForm = document.getElementById('message-form');
+
+messageForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const message = document.getElementById('message');
+
+  console.log('Message: ' + message.value);
+});
+</script>
+
+</body>
+</html>

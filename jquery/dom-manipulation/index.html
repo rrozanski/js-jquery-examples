@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../_lib/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="../_lib/jquery-3.4.1.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <main class="container mt-5">
+    <section>
+      <div class="alert alert-info" role="alert">
+        <p class="mb-0">
+          - on <em><strong>mouseover</strong></em> event background color of the box changes to green and text inside to <em>SUCCESS</em>
+        </p>
+        <p class="mb-0">
+          - on <em><strong>mouseout</strong></em> event background color of the box changes to red and text inside to <em>ERROR</em>
+        </p>
+      </div>
+      <div class="bg-danger text-light lead hover-test"
+           onmouseover="changeBoxToSuccess(event)">
+        ERROR
+      </div>
+    </section>
+
+    <hr class="my-5"/>
+
+    <section>
+      <div class="alert alert-info" role="alert">
+        <p class="mb-0">
+          - on button's <em><strong>click</strong></em> event alert window is shown, it contains text entered in the text input
+        </p>
+        <p class="mb-0">
+          - in case of no message in the input default message is shown
+        </p>
+      </div>
+      <div class="form-group">
+        <input id="alert-input" type="text" class="form-control">
+      </div>
+      <div class="text-center">
+        <button id="alert-button" class="btn btn-info">
+          ALERT
+        </button>
+      </div>
+    </section>
+
+    <hr class="my-5"/>
+
+    <section class="mb-5">
+      <div class="alert alert-info" role="alert">
+        <p class="mb-0">
+          - on button's <em><strong>click</strong></em> event visibility of menu container is toggled
+        </p>
+        <p class="mb-0">
+          - on the same event button's label is toggled accordingly (<em>SHOW MENU</em>, <em>HIDE MENU</em>)
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <button id="menu-button" class="btn btn-info">
+            SHOW MENU
+          </button>
+        </div>
+        <div id="menu-container" class="col-10">
+          <ol class="py-3 bg-warning">
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+            <li>Item #4</li>
+            <li>Item #5</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

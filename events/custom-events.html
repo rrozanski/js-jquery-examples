@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events - addEventListener()</title>
+</head>
+<body>
+
+<button onclick="dispatchCustomEvent()">Dispatch custom event</button>
+
+<script>
+const userId = 123;
+const removeUserEvent = new CustomEvent('remove-user', { detail: userId });
+
+window.addEventListener('remove-user', event => {
+  console.log(`User with ID ${event.detail} was removed.`);
+});
+
+function dispatchCustomEvent() {
+  window.dispatchEvent(removeUserEvent);
+}
+</script>
+
+</body>
+</html>

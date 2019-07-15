@@ -1,0 +1,17 @@
+{
+  "firstName": "Jason",
+  "lastName": "Kowalski",
+  "age": 29,
+  "debt": 100.75,
+  "address": {
+    "country": "Poland",
+    "city": "Gdynia"
+  },
+  "hobbies": [
+    "Reading",
+    "Video Games",
+    "Fishing"
+  ],
+  "isAdult": true,
+  "additionalInfo": null
+}
